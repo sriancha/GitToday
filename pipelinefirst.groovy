@@ -3,21 +3,21 @@ pipeline{
     stages{
 
         stage("build"){
-            steps{
+            steps {
                 println"hello ...Good Morning"
                 sh"mvn clean package"
                 sh"mvn package"
             }
         
         }
-        stages('upload'){
-            steps{
-                println("Upload the file")
+        stage('upload'){
+            steps {
+                println"Upload the file"
             }
         }
-        stages{
-            steps{
-                println("depoly the code")
+        stage{
+            steps {
+                println"depoly the code"
             }
         }
     }
