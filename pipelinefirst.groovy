@@ -4,7 +4,7 @@ pipeline{
 
         stage("build"){
             steps {
-                println"hello Good Morning"
+                println "hello Good Morning"
                 sh "mvn clean package"
                 sh "mvn package"
             }
@@ -12,12 +12,12 @@ pipeline{
         }
         stage("upload"){
             steps {
-                println"Upload the file"
+                println "Upload the file"
             }
         }
         stage("depoly"){
             steps {
-                println"depoly the code"
+                println "depoly the code"
             }
         }
     }
