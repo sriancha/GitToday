@@ -6,7 +6,6 @@ pipeline{
             steps {
                 println "hello Good Morning"
                 
-                sh "mvn package"
             }
         
         }
