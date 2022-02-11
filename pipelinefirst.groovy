@@ -17,7 +17,7 @@ pipeline{
         }
         stage("depoly"){
             steps {
-                println "depoly the code"
+                println "depoly the code in to env"
             }
         }
     }
